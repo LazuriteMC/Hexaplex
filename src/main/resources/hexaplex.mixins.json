@@ -6,6 +6,7 @@
   "mixins": [
   ],
   "client": [
+    "Matrix4fMixin"
   ],
   "injectors": {
     "defaultRequire": 1

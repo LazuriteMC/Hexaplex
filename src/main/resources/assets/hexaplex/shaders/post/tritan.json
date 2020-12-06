@@ -1,0 +1,17 @@
+{
+  "targets": [
+    "hexaplex:swap"
+  ],
+  "passes": [
+    {
+      "name": "hexaplex:tritan",
+      "intarget": "minecraft:main",
+      "outtarget": "hexaplex:swap"
+    },
+    {
+      "name": "minecraft:blit",
+      "intarget": "hexaplex:swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

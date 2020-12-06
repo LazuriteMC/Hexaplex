@@ -1,0 +1,78 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "minecraft:blit",
+  "fragment": "hexaplex:tritan",
+  "attributes": [ "Position" ],
+  "samplers": [
+    {
+      "name": "DiffuseSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+    {
+      "name": "OutSize",
+      "type": "float",
+      "count": 2,
+      "values": [ 1.0, 1.0 ]
+    },
+    {
+      "name": "RGB_TO_LMS",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+    {
+      "name": "LMS_TO_RGB",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+    {
+      "name": "LMS_TO_LMST",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+    {
+      "name": "RGBT_ERR",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    }
+  ]
+}
