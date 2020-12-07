@@ -1,6 +1,10 @@
 # Hexaplex
 
+![GitHub](https://img.shields.io/github/license/LazuriteMC/Hexaplex?color=A31F34&label=License&labelColor=8A8B8C)
 ![Discord](https://img.shields.io/discord/719662192601071747?color=7289DA&label=Discord&labelColor=2C2F33&logo=Discord&link=https://discord.gg/efCMR7U)
+![Website](https://img.shields.io/website?color=E34C26&label=Website&logo=HTML5&labelColor=FFFFFF&url=https%3A%2F%2Flazurite.dev)
+
+---
 
 ## What is Hexaplex?
 
@@ -16,9 +20,12 @@ shaders and resources without conflict.
 
 ## How does it work?
 
-Hexaplex utilizes a process called Daltonization which works by simulating what a person with a color vision 
-deficiency would perceive and then corrects for this by taking the missing color information and shifting it towards 
-the visible spectrum of the user's vision deficiency.
+Hexaplex utilizes a process called Daltonization which has the following four steps.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1.** Convert the original image to one that simulates what a person with a color vision deficiency would perceive.  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.** Calculate the difference between the original image and the simulated one.  
+&nbsp;&nbsp;&nbsp;&nbsp;**3.** Shift the color differences towards the visible spectrum of the user's vision deficiency.  
+&nbsp;&nbsp;&nbsp;&nbsp;**4.** Correct the original image by adding the corrected differences to it.  
 
 On the technical side, Hexaplex uses OpenGL shaders and applies Daltonization as a post-processing filter.
 
