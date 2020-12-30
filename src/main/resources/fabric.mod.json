@@ -3,7 +3,7 @@
   "id": "hexaplex",
   "version": "${version}",
   "name": "Hexaplex",
-  "description": "A colorblind correction mod for Minecraft.",
+  "description": "A colorblindness correction mod for Minecraft.",
   "authors": [
     "Lazurite Team"
   ],
@@ -16,10 +16,7 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "dev.lazurite.hexaplex.client.HexaplexClient"
-    ],
-    "main": [
-      "dev.lazurite.hexaplex.Hexaplex"
+      "dev.lazurite.hexaplex.init.ClientInitializer"
     ]
   },
   "mixins": [

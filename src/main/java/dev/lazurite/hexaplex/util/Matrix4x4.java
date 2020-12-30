@@ -8,11 +8,12 @@ import net.minecraft.util.math.Quaternion;
 
 import java.nio.FloatBuffer;
 
+// TODO: Implement vecmath.Matrix4f features
 /**
  * A {@link Matrix4f} wrapper with additional features.
  * @author Patrick Hofmann
  */
-public class Matrix4x4 {
+public final class Matrix4x4 {
 
     // region attributes
 
@@ -133,7 +134,7 @@ public class Matrix4x4 {
      */
     @Environment(EnvType.CLIENT)
     public static int[] unpack(int index) {
-        return new int[] { index % 4, index - (index % 4) };
+        return new int[] { index % 4, index / 4 };
     }
 
     /**

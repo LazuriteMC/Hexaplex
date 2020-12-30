@@ -5,7 +5,7 @@
     "dstrgb": "1-srcalpha"
   },
   "vertex": "minecraft:blit",
-  "fragment": "hexaplex:tritan",
+  "fragment": "hexaplex:filter",
   "attributes": [ "Position" ],
   "samplers": [
     {
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "name": "LMS_TO_LMST",
+      "name": "LMS_TO_LMSC",
       "type": "matrix4x4",
       "count": 16,
       "values": [
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "name": "RGBT_ERR",
+      "name": "LMSC_ERR",
       "type": "matrix4x4",
       "count": 16,
       "values": [

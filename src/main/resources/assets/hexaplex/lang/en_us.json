@@ -1,0 +1,9 @@
+{
+  "options.hexaplex.profile.title": "Colorblindness",
+  "options.hexaplex.profile.normal": "Normal",
+  "options.hexaplex.profile.deuteran": "Deuteran",
+  "options.hexaplex.profile.protan": "Protan",
+  "options.hexaplex.profile.tritan": "Tritan",
+  "options.hexaplex.strength.tooltip": "Determines the strength of the colorblindness filter.",
+  "options.hexaplex.strength.title": "Colorblindness Strength"
+}

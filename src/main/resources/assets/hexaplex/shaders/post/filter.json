@@ -4,7 +4,7 @@
   ],
   "passes": [
     {
-      "name": "hexaplex:tritan",
+      "name": "hexaplex:filter",
       "intarget": "minecraft:main",
       "outtarget": "hexaplex:swap"
     },

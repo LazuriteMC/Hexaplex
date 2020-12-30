@@ -10,6 +10,10 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+minecraft {
+    accessWidener "src/main/resources/hexaplex.accesswidener"
+}
+
 dependencies {
     //to change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -24,6 +28,15 @@ dependencies {
 
     modImplementation "io.github.ladysnake:Satin:${satin_version}"
     include "io.github.ladysnake:Satin:${satin_version}"
+
+    modImplementation "me.zeroeightsix:fiber:${fiber_version}"
+    include "me.zeroeightsix:fiber:${fiber_version}"
+
+    // what does transitive do?
+    modImplementation("io.github.prospector:modmenu:1.14.13+build.22")
+//    {
+//        transitive(false)
+//    }
 }
 
 processResources {

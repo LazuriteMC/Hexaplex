@@ -1,0 +1,27 @@
+accessWidener   v1  named
+mutable     field   net/minecraft/client/gui/screen/options/AccessibilityOptionsScreen  OPTIONS                                     [Lnet/minecraft/client/options/Option;
+accessible  method  net/minecraft/client/options/Option                                 getGenericLabel                             (Lnet/minecraft/text/Text;)Lnet/minecraft/text/Text;
+accessible  method  net/minecraft/client/options/Option                                 getPercentLabel                             (D)Lnet/minecraft/text/Text;
+
+# Matrix4f
+accessible  field   net/minecraft/util/math/Matrix4f                                    a00                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a01                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a02                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a03                                         F
+
+accessible  field   net/minecraft/util/math/Matrix4f                                    a10                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a11                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a12                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a13                                         F
+
+accessible  field   net/minecraft/util/math/Matrix4f                                    a20                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a21                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a22                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a23                                         F
+
+accessible  field   net/minecraft/util/math/Matrix4f                                    a30                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a31                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a32                                         F
+accessible  field   net/minecraft/util/math/Matrix4f                                    a33                                         F
+
+accessible  method  net/minecraft/util/math/Matrix4f                                    pack                                        (II)I
