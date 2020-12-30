@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "Matrix4fMixin"
+    "AccessibilityOptionsScreenMixin",
+    "MinecraftClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1
