@@ -22,10 +22,10 @@ shaders and resources without conflict.
 
 Hexaplex utilizes a process called Daltonization which has the following four steps.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**1.** Convert the original image to one that simulates what a person with a color vision deficiency would perceive.  
-&nbsp;&nbsp;&nbsp;&nbsp;**2.** Calculate the difference between the original image and the simulated one.  
-&nbsp;&nbsp;&nbsp;&nbsp;**3.** Shift the color differences towards the visible spectrum of the user's vision deficiency.  
-&nbsp;&nbsp;&nbsp;&nbsp;**4.** Correct the original image by adding the corrected differences to it.  
+* Convert the original image to one that simulates what a person with a color vision deficiency would perceive.
+* Calculate the difference between the original image and the simulated one.
+* Shift the color differences towards the visible spectrum of the user's vision deficiency.
+* Correct the original image by adding the corrected differences to it.
 
 On the technical side, Hexaplex uses OpenGL shaders and applies Daltonization as a post-processing filter.
 
@@ -46,7 +46,8 @@ Canaanites/Phoenicians, Hebrews, and classical Greeks in the production of rare 
 
 Hexaplex wouldn't be possible without the following mods:
 
-[Ladysnake/Satin](https://github.com/Ladysnake/Satin)
+* [Ladysnake/Satin](https://github.com/Ladysnake/Satin)
+* [FabLabsMc/Fiber](https://github.com/FabLabsMC/fiber)
 
 ## Issues and Suggestions
 
