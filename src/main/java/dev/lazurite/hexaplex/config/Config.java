@@ -1,6 +1,7 @@
 package dev.lazurite.hexaplex.config;
 
 import dev.lazurite.hexaplex.graphics.ShaderManager;
+import dev.lazurite.hexaplex.init.ClientInitializer;
 import io.github.fablabsmc.fablabs.api.fiber.v1.annotation.AnnotatedSettings;
 import io.github.fablabsmc.fablabs.api.fiber.v1.annotation.Setting;
 import io.github.fablabsmc.fablabs.api.fiber.v1.annotation.Settings;
@@ -14,9 +15,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 @Settings(onlyAnnotated = true)
-public final class HexaplexConfig {
+public class Config {
 
-    public static final HexaplexConfig INSTANCE = new HexaplexConfig();
+    public static final Config INSTANCE = new Config();
 
     private boolean dirty;
 
@@ -27,7 +28,7 @@ public final class HexaplexConfig {
     @Setting.Constrain.Range(min = 0.0, max = 1.0, step = 0.01)
     private double strength;
 
-    private HexaplexConfig() {
+    private Config() {
         this.profile = ShaderManager.Profiles.NORMAL;
         this.strength = 0.0;
         this.dirty = true;
@@ -53,19 +54,26 @@ public final class HexaplexConfig {
                 new JanksonValueSerializer(false)
             );
         } catch (IOException e) {
+            ClientInitializer.LOGGER.error("Error saving Hexaplex config.");
             e.printStackTrace();
         }
     }
 
     public void load() {
-        try {
-            FiberSerialization.deserialize(
-                ConfigTree.builder().applyFromPojo(INSTANCE, AnnotatedSettings.builder().collectOnlyAnnotatedMembers().build()).build(),
-                Files.newInputStream(FabricLoader.getInstance().getConfigDir().resolve("hexaplex.json")),
-                new JanksonValueSerializer(false)
-            );
-        } catch (IOException | FiberException e) {
-            e.printStackTrace();
+        if (Files.exists(FabricLoader.getInstance().getConfigDir().resolve("hexaplex.json"))) {
+            try {
+                FiberSerialization.deserialize(
+                    ConfigTree.builder().applyFromPojo(INSTANCE, AnnotatedSettings.builder().collectOnlyAnnotatedMembers().build()).build(),
+                    Files.newInputStream(FabricLoader.getInstance().getConfigDir().resolve("hexaplex.json")),
+                    new JanksonValueSerializer(false)
+                );
+            } catch (IOException | FiberException e) {
+                ClientInitializer.LOGGER.error("Error loading Hexaplex config.");
+                e.printStackTrace();
+            }
+        } else {
+            ClientInitializer.LOGGER.info("Creating Hexaplex config.");
+            this.save();
         }
     }
 

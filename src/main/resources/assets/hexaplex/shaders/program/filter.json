@@ -1,9 +1,4 @@
 {
-  "blend": {
-    "func": "add",
-    "srcrgb": "srcalpha",
-    "dstrgb": "1-srcalpha"
-  },
   "vertex": "minecraft:blit",
   "fragment": "hexaplex:filter",
   "attributes": [ "Position" ],
@@ -31,7 +26,7 @@
       "values": [ 1.0, 1.0 ]
     },
     {
-      "name": "RGB_TO_LMS",
+      "name": "rgbToLms",
       "type": "matrix4x4",
       "count": 16,
       "values": [
@@ -42,7 +37,7 @@
       ]
     },
     {
-      "name": "LMS_TO_RGB",
+      "name": "lmsToRgb",
       "type": "matrix4x4",
       "count": 16,
       "values": [
@@ -53,7 +48,7 @@
       ]
     },
     {
-      "name": "LMS_TO_LMSC",
+      "name": "lmsToLmsc",
       "type": "matrix4x4",
       "count": 16,
       "values": [
@@ -64,7 +59,7 @@
       ]
     },
     {
-      "name": "LMSC_ERR",
+      "name": "rgbcErr",
       "type": "matrix4x4",
       "count": 16,
       "values": [

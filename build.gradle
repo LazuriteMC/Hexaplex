@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.5.42'
+    id 'fabric-loom' version '0.5-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -26,11 +26,11 @@ dependencies {
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
 
-    modImplementation "io.github.ladysnake:Satin:${satin_version}"
-    include "io.github.ladysnake:Satin:${satin_version}"
+    modImplementation "io.github.ladysnake:Satin:${project.satin_version}"
+    include "io.github.ladysnake:Satin:${project.satin_version}"
 
-    modImplementation "me.zeroeightsix:fiber:${fiber_version}"
-    include "me.zeroeightsix:fiber:${fiber_version}"
+    modImplementation "me.zeroeightsix:fiber:${project.fiber_version}"
+    include "me.zeroeightsix:fiber:${project.fiber_version}"
 
     // what does transitive do?
     modImplementation("io.github.prospector:modmenu:1.14.13+build.22")

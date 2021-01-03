@@ -1,6 +1,6 @@
 package dev.lazurite.hexaplex.mixin;
 
-import dev.lazurite.hexaplex.rendering.BlitRenderCallback;
+import dev.lazurite.hexaplex.graphics.BlitRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderTickCounter;
 import org.spongepowered.asm.mixin.Final;
