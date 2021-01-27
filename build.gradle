@@ -32,11 +32,10 @@ dependencies {
     modImplementation "me.zeroeightsix:fiber:${project.fiber_version}"
     include "me.zeroeightsix:fiber:${project.fiber_version}"
 
-    // what does transitive do?
-    modImplementation("io.github.prospector:modmenu:1.14.13+build.22")
-//    {
-//        transitive(false)
-//    }
+    modImplementation "me.shedaniel.cloth:config-2:${project.cloth_version}"
+    include "me.shedaniel.cloth:config-2:${project.cloth_version}"
+
+    modImplementation "io.github.prospector:modmenu:${project.modmenu_version}"
 }
 
 processResources {

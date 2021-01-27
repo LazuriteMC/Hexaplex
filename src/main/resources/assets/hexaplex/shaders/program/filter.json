@@ -1,4 +1,11 @@
 {
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha",
+    "srcalpha": "one",
+    "dstalpha": "zero"
+  },
   "vertex": "minecraft:blit",
   "fragment": "hexaplex:filter",
   "attributes": [ "Position" ],

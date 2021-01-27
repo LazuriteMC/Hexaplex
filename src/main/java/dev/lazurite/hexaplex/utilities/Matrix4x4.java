@@ -1,4 +1,4 @@
-package dev.lazurite.hexaplex.util;
+package dev.lazurite.hexaplex.utilities;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

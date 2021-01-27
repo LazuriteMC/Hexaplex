@@ -1,12 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.lazurite.hexaplex.mixin",
+  "package": "dev.lazurite.hexaplex.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "AccessibilityOptionsScreenMixin",
     "MinecraftClientMixin"
   ],
   "injectors": {
