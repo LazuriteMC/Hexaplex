@@ -42,7 +42,7 @@ Canaanites/Phoenicians, Hebrews, and classical Greeks in the production of rare 
 
 ## How to install
 
-Hexaplex can be downloaded from Modrinth, CurseForge, or here on GitHub. It depends on [Mod Menu](https://github.com/TerraformersMC/ModMenu) in order to configure the settings as it defaults to not applying a filter.
+Hexaplex can be downloaded from [Modrinth](https://modrinth.com/mod/hexaplex), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/hexaplex), or here on [GitHub](https://github.com/LazuriteMC/Hexaplex/releases). It depends on [Mod Menu](https://github.com/TerraformersMC/ModMenu) in order to configure the settings as it defaults to not applying a filter.
 
 ## Special Thanks
 
