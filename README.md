@@ -22,17 +22,27 @@ Note: Optifabric is currently incompatible. This will be resolved by a 1.0.0 rel
 
 Hexaplex utilizes a process called Daltonization which has the following four steps.
 
-* Convert the original image to one that simulates what a person with a color vision deficiency would perceive.
-* Calculate the difference between the original image and the simulated one.
-* Shift the color differences towards the visible spectrum of the user's vision deficiency.
-* Correct the original image by adding the corrected differences to it.
+* Convert the original color to one that simulates what a person with a color vision deficiency would perceive.
+* Calculate the difference between the original color and the simulated one.
+* Shift the difference towards the visible spectrum of the person's color vision deficiency.
+* Correct the original color by adding the corrected difference to it.
 
 On the technical side, Hexaplex uses OpenGL shaders and applies Daltonization as a post-processing filter.
+
+## Examples
+
+![](https://github.com/LazuriteMC/lazuritemc.github.io/blob/master/img/hexaplex_examples.png)
+
+Clockwise from top-left: Normal, Protanomaly, Tritanomaly, Deuteranomaly. All examples images were taken with 50% strength and 50% skew.
 
 ## What does "Hexaplex" mean?
 
 [Hexaplex](https://en.wikipedia.org/wiki/Hexaplex) is a genus of sea snail that was used by the Minoans, 
 Canaanites/Phoenicians, Hebrews, and classical Greeks in the production of rare blue and purple dyes.
+
+## How to install
+
+Hexaplex can be downloaded from Modrinth, CurseForge, or here on GitHub. It depends on [Mod Menu](https://github.com/TerraformersMC/ModMenu) in order to configure the settings as it defaults to not applying a filter.
 
 ## Special Thanks
 
