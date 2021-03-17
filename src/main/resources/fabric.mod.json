@@ -26,10 +26,9 @@
   "mixins": [
     "hexaplex.mixins.json"
   ],
-  "accessWidener": "hexaplex.accesswidener",
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "21w10a"
   }
 }

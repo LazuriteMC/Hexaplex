@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.lazurite.hexaplex.mixins",
+  "package": "dev.lazurite.hexaplex.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
