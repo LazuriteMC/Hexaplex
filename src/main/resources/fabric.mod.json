@@ -27,8 +27,8 @@
     "hexaplex.mixins.json"
   ],
   "depends": {
-    "fabricloader": "*",
+    "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "21w10a"
+    "minecraft": "1.16.x"
   }
 }
