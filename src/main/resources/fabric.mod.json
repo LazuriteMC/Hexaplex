@@ -1,35 +1,39 @@
 {
   "schemaVersion": 1,
   "id": "hexaplex",
-  "version": "${version}",
+  "version": "$version",
+  "environment": "client",
+  "entrypoints": {
+    "client": [ "dev.lazurite.hexaplex.Hexaplex" ],
+    "modmenu": [ "dev.lazurite.hexaplex.Hexaplex" ]
+  },
+  "mixins": [
+    {
+      "config": "hexaplex.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "java": "17",
+    "minecraft": "$min_minecraft_version",
+    "fabricloader": "$min_fabric_loader_version",
+    "fabric": "$min_fabric_api_version"
+  },
   "name": "Hexaplex",
   "description": "A colorblindness correction mod for Minecraft.",
-  "authors": [
-    "The Lazurite Team"
-  ],
+  "authors": [ "The Lazurite Team" ],
   "contact": {
-    "homepage": "https://lazurite.dev/",
-    "sources": "https://github.com/LazuriteMC/Hexaplex",
-    "issues": "https://github.com/LazuriteMC/Hexaplex/issues"
+    "homepage": "https://lazurite.dev",
+    "issues": "https://github.com/LazuriteMC/Hexaplex/issues",
+    "sources": "https://github.com/LazuriteMC/Hexaplex"
   },
   "license": "MIT",
   "icon": "assets/hexaplex/icon.png",
-  "environment": "client",
-  "entrypoints": {
-    "client": [
-      "dev.lazurite.hexaplex.Hexaplex"
-    ],
-    "modmenu": [
-      "dev.lazurite.hexaplex.gui.ModMenu"
-    ]
-  },
-  "mixins": [
-    "hexaplex.mixins.json"
-  ],
-  "accessWidener": "hexaplex.accesswidener",
-  "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.16.x"
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/NNPPHN7b3P"
+      }
+    }
   }
 }
